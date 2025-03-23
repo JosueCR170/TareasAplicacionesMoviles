@@ -1,0 +1,45 @@
+.custom-item {
+    text-align: center;
+    background: white;
+  }
+  
+  .card {
+    background: #8a949f;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-content {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 30vw;
+    min-height: 200px;
+    max-height: 300px;
+    object-fit: contain;
+  }
+  
+  .card-header {
+    width: 100%;
+  }
+  
+  .card-title {
+    color: #ffffff;
+  }
+  
+  .card-subtitle {
+    font-size: clamp(1.1rem, 1.6vw, 2rem);
+    color: #61ff6b;
+  }
+  
