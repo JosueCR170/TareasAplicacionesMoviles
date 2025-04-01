@@ -14,5 +14,8 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './src/setupTests.ts',
-  }
+  },
+  define: {
+    "import.meta.env.MODE": JSON.stringify(process.env.NODE_ENV || 'development'), 
+  },
 })

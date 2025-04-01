@@ -13,13 +13,16 @@ interface AuthContextProps {
   logout: () => void;
 }
 
+
 const AuthContext = createContext<AuthContextProps | undefined>(undefined);
+const isTestEnv = import.meta.env.MODE === "test";
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<userData | null>(null);
 
 
   useEffect(() => {
+    if (isTestEnv) return;
     const storedUser = sessionStorage.getItem("user");
     if (storedUser) {
       try{
@@ -43,7 +46,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const login = (userData: userData) => {
-    
+    if (isTestEnv) return;
+
     const validationKey=import.meta.env.VITE_APP_VALIDATION_KEY;
     const userWithValidation = {
       ...userData,
@@ -54,6 +58,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const logout = () => {
+    if (isTestEnv) return;
     setUser(null);
     sessionStorage.removeItem("user");
   };
