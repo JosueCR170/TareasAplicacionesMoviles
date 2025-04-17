@@ -1,0 +1,76 @@
+.card {
+  margin: 40px auto;
+    box-shadow: 5px 5px 10px #868686, -5px -5px 10px #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  
+  .card-header {
+    padding: 10px 10px 0px 10px;
+    border-radius: 10px 10px 0 0;
+    color: #000000;
+    width: 100%;
+    text-align: start;
+  }
+
+  .card-body{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .card-header h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    margin: 20px 10px;
+  }
+
+  .item .input{
+    width: 75%;
+  }
+
+ .icon{
+  margin-inline: 10px;
+  font-size: 30px;
+ }
+  
+  .login-button {
+    background: #434147;
+    margin: 15px;
+    width: 50%;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background: #5a595f;
+  }
+
+  ion-toast.custom-toast {
+    --background: #f71b1b;
+    --box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+    --color: #ffffff;
+  }
+  
+  ion-toast.custom-toast::part(message) {
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+ 

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1045800143059",
+    "project_id": "prueba-be5b1",
+    "storage_bucket": "prueba-be5b1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045800143059:android:f6413548f0bbe3bcb72c26",
+        "android_client_info": {
+          "package_name": "prueba.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045800143059-hsmf86r06c3vmater8pbj4u9dn2sv9bb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "prueba.com",
+            "certificate_hash": "eeeb169c9be4642170a1da72f028c1226955a203"
+          }
+        },
+        {
+          "client_id": "1045800143059-cpodrq6p7m2b7ikjfa3lc6b0ov36rap2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApwfpoYMcYXN-vfHXlqxqmkoXz_9aE4uE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045800143059-cpodrq6p7m2b7ikjfa3lc6b0ov36rap2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
