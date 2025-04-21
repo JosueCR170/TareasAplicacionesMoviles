@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "146992679879",
+    "project_id": "una-app-65cc4",
+    "storage_bucket": "una-app-65cc4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146992679879:android:d0baae98357d7896a427e2",
+        "android_client_info": {
+          "package_name": "com.una.tareafirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146992679879-reejnc3gjcobfo9hsps00jj8jda1nhni.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.una.tareafirebase",
+            "certificate_hash": "eeeb169c9be4642170a1da72f028c1226955a203"
+          }
+        },
+        {
+          "client_id": "146992679879-f16nnebg87ihf69ivknp2k80v5putj6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-Mp5VbPdQhwy7wTZ1tz_fC_RRhTJcUJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146992679879-f16nnebg87ihf69ivknp2k80v5putj6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
