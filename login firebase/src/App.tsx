@@ -21,11 +21,13 @@ import {
   key,
   storefront,
   search,
+  atCircle,
 } from "ionicons/icons";
 import Tab1 from "./pages/Tab1";
 import Tab2 from "./pages/Tab2";
 import Tab3 from "./pages/Tab3";
 import Home from "./pages/home";
+import Tab4 from "./pages/Tab4";
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
 
@@ -110,6 +112,10 @@ const App: React.FC = () => {
                 <Tab3 />
               </Route>
 
+              <Route exact path="/tab4">
+                <Tab4 />
+              </Route>
+
               <Route exact path="/accesoRestringido">
                 <AccesoRestringido />
               </Route>
@@ -142,7 +148,12 @@ const App: React.FC = () => {
                 <IonLabel>Tab 2</IonLabel>
               </IonTabButton>
 
-              {rolPermitido.includes(userData.role) && (
+              <IonTabButton tab="tab4" href="/tab4">
+                <IonIcon aria-hidden="true" icon={square} />
+                <IonLabel>Tab 4</IonLabel>
+              </IonTabButton>
+
+              {rolPermitido.includes(userData.rol) && (
                 <IonTabButton tab="seguridad" href="/seguridad">
                   <IonIcon aria-hidden="true" icon={key} />
                   <IonLabel>Seguridad</IonLabel>

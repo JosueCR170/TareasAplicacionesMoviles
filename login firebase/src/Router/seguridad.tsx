@@ -15,7 +15,7 @@ import { useAuth } from "../context/AuthContext";
         return <Redirect to="/login" />
     }
 
-    if (user && userData && !rolPermitido.includes(userData.role)) {
+    if (user && userData && !rolPermitido.includes(userData.rol)) {
         return <Redirect to="/accesoRestringido" />
     }
 

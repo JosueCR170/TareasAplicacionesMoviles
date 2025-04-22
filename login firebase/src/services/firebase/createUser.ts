@@ -16,12 +16,12 @@ export const registerUser = async ({ email, password, userName }: RegisterData) 
     const user = userCredential.user;
 
     // Guardar el usuario en Firestore
-    await setDoc(doc(db, 'users', user.uid), {
-      uid: user.uid,
+    await setDoc(doc(db, 'roluser', user.uid), {
+      user_id: user.uid,
       email,
       userName,
       createdAt: new Date(),
-      role: 'USER', 
+      rol: 'USER', 
     });
 
     //await signOut(auth);
@@ -33,18 +33,18 @@ export const registerUser = async ({ email, password, userName }: RegisterData) 
   }
 }
 
-  export const createUserProfile = async ({ uid, email, userName, role = 'USER' }: UserModel) => {
+  export const createUserProfile = async ({ user_id, email, userName, rol = 'USER' }: UserModel) => {
     try {
-      const userRef = doc(db, 'users', uid);
+      const userRef = doc(db, 'roluser', user_id);
       const userDoc = await getDoc(userRef);
   
       // Solo crear si no existe
       if (!userDoc.exists()) {
         await setDoc(userRef, {
-          uid,
+          user_id,
           email,
           userName,
-          role,
+          rol,
           createdAt: new Date(),
         });
         console.log('Perfil de usuario creado en Firestore');

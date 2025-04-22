@@ -1,7 +1,7 @@
 export interface UserModel{
-    uid: string;
+    user_id: string;
     userName: string;
     email: string;
     password?: string;
-    role?: "ADMIN" | "USER";
+    rol?: "ADMIN" | "USER";
 }
