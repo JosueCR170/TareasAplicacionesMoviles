@@ -36,7 +36,7 @@ const NotificationSender: React.FC = () => {
       return;
     }
 
-    const response = await fetch('http://192.168.190.7:3000/api/send-notification', {
+    const response = await fetch('http://192.168.100.2:3000/api/send-notification', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ token: selectedToken, title, body })

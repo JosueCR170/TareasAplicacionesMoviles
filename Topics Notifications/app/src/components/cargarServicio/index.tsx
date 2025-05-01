@@ -15,7 +15,7 @@ const FirebaseStatus: React.FC = () => {
   useEffect(() => {
     //http://10.0.2.2:3000 para emulador de android studio
     //http://192.168.100.2:3000 para dispositivo móvil por usb
-    fetch("http://192.168.190.7:3000/api/firebase-status")
+    fetch("http://192.168.100.2:3000/api/firebase-status")
       .then((res) => res.json())
       .then((data) => {
         setStatus(data);
